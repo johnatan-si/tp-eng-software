@@ -1,58 +1,116 @@
+
 # Product Backlog
 
 > O backlog operacional deve ser mantido no **GitHub Project**, por meio de Issues. Este documento explica a convenção adotada e apresenta uma visão rastreável dos itens.
 
 ## 1. Link do GitHub Project
 
-`[COLAR LINK DO PROJECT]`
+[ConectaAção — Backlog](https://github.com/users/gigi-zacaroni/projects/1)
 
 ## 2. Campos obrigatórios no Project
 
 Cada item deve possuir, no mínimo:
 
-- título claro;
-- tipo (`user-story`, `task`, `bug`, `documentation`, `test` etc.);
-- prioridade;
-- responsável;
-- sprint;
-- status;
-- critério de aceitação ou conclusão;
-- requisito relacionado, quando aplicável.
+* título claro;
+* tipo (`user-story`, `task`, `bug`, `documentation`, `test` etc.);
+* prioridade;
+* responsável;
+* sprint;
+* status;
+* critério de aceitação ou conclusão;
+* requisito relacionado, quando aplicável.
 
 ## 3. Estratégia de priorização
 
-`[Explique os critérios utilizados: valor, risco, dependências, urgência, complexidade etc.]`
+A priorização dos itens será realizada considerando principalmente o **valor para o usuário**, a **importância para o funcionamento da aplicação**, as **dependências entre funcionalidades** e a **complexidade de desenvolvimento**. As funcionalidades essenciais para solucionar o problema principal terão prioridade maior, enquanto funcionalidades complementares poderão ser desenvolvidas posteriormente.
 
 ## 4. Visão resumida do backlog
 
-| ID | Link da Issue | Tipo | Descrição curta | Prioridade | Requisito | Sprint | Estado final |
-|---|---|---|---|---|---|---|---|
-| `US-01` | `#XX` | História | `[PREENCHER]` | Alta | `RF-01` | 2 | Planejado |
-| `T-01` | `#XX` | Tarefa | `[PREENCHER]` | Alta | `RF-01` | 2 | Planejado |
+
+| ID     | Link da Issue                                                                          | Tipo         | Descrição curta                                                                             | Prioridade | Requisito | Sprint | Estado final |
+| ------ | -------------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------- | ---------- | --------- | ------ | ------------ |
+| `T-01` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/visao-geral.md) | Tarefa       | Definir e delimitar o problema que o ConectaAção pretende solucionar.                       | Alta       | —         | 1      | Concluído    |
+| `T-02` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/visao-geral.md) | Tarefa       | Identificar o público principal e os stakeholders envolvidos no sistema.                    | Alta       | —         | 1      | Concluído    |
+| `D-01` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/visao-geral.md) | Documentação | Criar a visão geral do produto, incluindo problema, público, proposta de valor e objetivos. | Alta       | —         | 1      | Concluído    |
+| `T-03` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/visao-geral.md) | Tarefa       | Definir o nome do projeto e sua proposta de valor.                                          | Média      | —         | 1      | Concluído    |
+| `T-04` | [Link](https://github.com/users/gigi-zacaroni/projects/1) | Tarefa       | Criar e configurar o GitHub Project para gerenciamento do projeto.                          | Alta       | —         | 1      | Concluído   |
+| `T-05` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/backlog-produto.md) | Tarefa       | Criar o backlog inicial com as principais funcionalidades e atividades do projeto.          | Alta       | —         | 1      | Concluído    |
+| `T-06` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/README.md) | Tarefa       | Definir os integrantes e suas responsabilidades dentro do projeto.                          | Média      | —         | 1      | Concluído   |
+| `T-07` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/tree/main/docs/prototipo) | Tarefa       | Criar o protótipo inicial da interface da aplicação.                                        | Média      | —         | 1–2      | Concluído   |
+| `D-02` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/pull/1) | Documentação | Documentar os requisitos verificáveis do ConectaAção (atores, RF, RNF, regras de negócio e histórias). | Alta | `RF-01`–`RF-27`, `RNF-01`–`RNF-10`, `RN-01`–`RN-08` | 2 | Concluído |
+| `D-03` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/prototipo/README.md) | Documentação | Entregar o protótipo navegável e documentar o vínculo entre suas telas, os requisitos e os critérios de aceitação. | Alta | `RF-01`–`RF-27` | 2 | Concluído |
+| `D-04` | [Link](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/sprints/sprint-02.md) | Documentação | Consolidar o registro das Sprints 1 e 2 e preencher a rastreabilidade requisito → Issue → protótipo. | Alta | — | 2 | Concluído |
+| `US-01` | [#2](https://github.com/gigi-zacaroni/tp-eng-software/issues/2) | User story | Criar conta de doador informando nome, e-mail, senha e confirmação. | Alta | `RF-01`, `RNF-03` | 2 (especificação) · 3 (back-end) | Implementada (back-end) |
+| `US-02` | [#5](https://github.com/gigi-zacaroni/tp-eng-software/issues/5) | User story | Cadastrar a instituição em três seções: identificação/acesso, sobre a instituição e necessidades iniciais. | Alta | `RF-02`, `RF-11` | 2 (especificação) · 3 (back-end) | Implementada parcialmente |
+| `US-03` | [#3](https://github.com/gigi-zacaroni/tp-eng-software/issues/3) | User story | Entrar com e-mail e senha, encerrar sessão e restringir dados sensíveis a quem está autenticado. | Alta | `RF-03`, `RF-04`, `RF-05` | 2 (especificação) · 3 (back-end) | Implementada parcialmente |
+| `US-04` | [#6](https://github.com/gigi-zacaroni/tp-eng-software/issues/6) | User story | Buscar e filtrar instituições para encontrar rapidamente quem ajudar. | Alta | `RF-06`–`RF-09` | 2 (especificação) | Especificada |
+| `US-05` | [#7](https://github.com/gigi-zacaroni/tp-eng-software/issues/7) | User story | Ver a página de detalhe da instituição, com necessidades, contato e progresso. | Alta | `RF-10`, `RF-11`, `RF-18` | 2 (especificação) | Especificada |
+| `US-06` | [#8](https://github.com/gigi-zacaroni/tp-eng-software/issues/8) | User story | Favoritar e desfavoritar instituições e consultar a lista de favoritos. | Baixa | `RF-12`, `RF-13` | 2 (especificação) | Especificada |
+| `US-07` | [#9](https://github.com/gigi-zacaroni/tp-eng-software/issues/9) | User story | Cadastrar, editar, excluir e pausar as necessidades da instituição. | Alta | `RF-14`–`RF-17` | 2 (especificação) | Especificada |
+| `US-08` | [#10](https://github.com/gigi-zacaroni/tp-eng-software/issues/10) | User story | Prometer uma doação para uma necessidade, limitada ao que ainda falta. | Alta | `RF-18`, `RF-19` | 2 (especificação) · 3 (back-end) | Implementada parcialmente |
+| `US-09` | [#11](https://github.com/gigi-zacaroni/tp-eng-software/issues/11) | User story | Acompanhar o status das doações e cancelá-las quando necessário. | Média | `RF-20`, `RF-21` | 2 (especificação) | Especificada |
+| `US-10` | [#12](https://github.com/gigi-zacaroni/tp-eng-software/issues/12) | User story | Ver as doações prometidas e confirmar o recebimento. | Alta | `RF-22`–`RF-24` | 2 (especificação) | Especificada |
+| `US-11` | [#13](https://github.com/gigi-zacaroni/tp-eng-software/issues/13) | User story | Ser notificado sobre eventos relevantes das doações. | Média | `RF-25`–`RF-27` | 2 (especificação) | Especificada |
+| `D-05` | [#15](https://github.com/gigi-zacaroni/tp-eng-software/issues/15) | Documentação | Modelo comportamental do fluxo de doação em Mermaid, com descrição das decisões representadas. | Alta | `RF-19`–`RF-24` | 3 | Concluído |
+| `D-06` | [#16](https://github.com/gigi-zacaroni/tp-eng-software/issues/16) | Documentação | Modelo estrutural (ER de domínio) e tradução para o schema físico MySQL com constraints de integridade. | Alta | `RF-01`, `RF-02`, `RF-18`, `RF-19`, `RNF-06` | 3 | Concluído |
+| `D-07` | [#17](https://github.com/gigi-zacaroni/tp-eng-software/issues/17) | Documentação | Atualizar a matriz de rastreabilidade com os modelos e o código da Sprint 3. | Alta | `RF-01`–`RF-27` | 3 | Concluído |
+| `T-08` | [#18](https://github.com/gigi-zacaroni/tp-eng-software/issues/18) | Tarefa | API REST de cadastro, login e promessa de doação, tornando executável o fluxo modelado. | Alta | `RF-01`–`RF-04`, `RF-19`, `RNF-03`, `RNF-06` | 3 | Concluído |
+| `T-09` | [#19](https://github.com/gigi-zacaroni/tp-eng-software/issues/19) | Tarefa | Remover a API legada `src/server.js` (credencial versionada e doador forjável) e consolidar o schema num único arquivo. | Alta | — | 4 | Concluído |
+| `T-10` | [#20](https://github.com/gigi-zacaroni/tp-eng-software/issues/20) | Tarefa | Expor endpoints de consulta (`GET`) de instituições e necessidades. Bloqueia `US-04`, `US-05` e a verificação do `RF-05`. | Alta | `RF-06`–`RF-10`, `RF-18`, `RNF-04` | 4 → 5 | A fazer |
+| `T-11` | [#21](https://github.com/gigi-zacaroni/tp-eng-software/issues/21) | Tarefa | Separar o back-end em rotas, controllers e services. | Média | `RF-01`–`RF-04`, `RF-19` | 4 | Concluído |
+| `T-12` | [#22](https://github.com/gigi-zacaroni/tp-eng-software/issues/22) | Tarefa | Levar a geração do JWT para o `authService` e manter o middleware protegendo as rotas. | Média | `RF-03`, `RF-05` | 4 | Concluído |
+| `T-13` | [#23](https://github.com/gigi-zacaroni/tp-eng-software/issues/23) | Tarefa | Levar a regra de doação (`SELECT ... FOR UPDATE`) para o `doacaoService`. | Média | `RF-19`, `RNF-06` | 4 | Concluído |
+| `T-14` | [#24](https://github.com/gigi-zacaroni/tp-eng-software/issues/24) | Tarefa | Configurar as variáveis de ambiente (`.env`) para banco e JWT. | Média | — | 4 | Concluído |
+| `D-08` | D-08 | Documentação | Registrar as decisões de projeto, a análise de coesão e acoplamento e as melhorias identificadas. | Alta | — | 4 | Concluído |
+| `T-15` | T-15 | Tarefa | Services lançam erro de domínio; só o handler central traduz para HTTP. | Média | — | 5 | A fazer |
+| `T-16` | T-16 | Tarefa | Definir um lugar único para validar a entrada das requisições. | Baixa | — | 5 | A fazer |
+| `T-17` | [#25](https://github.com/gigi-zacaroni/tp-eng-software/issues/25) | Tarefa | Implementar o padrão Repository: tirar o SQL de dentro dos services e criar `src/back/src/repositories/` (ver [`DP-04`](https://github.com/gigi-zacaroni/tp-eng-software/blob/sprint-05/docs/projeto/decisoes-de-projeto.md) e [`padroes-de-projeto.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/sprint-05/docs/padroes/padroes-de-projeto.md)). | Média | `RF-01`–`RF-03`, `RF-14`, `RF-18`, `RF-19`, `RNF-06` | 5 | Implementada (aguarda revisão e merge) |
+| `T-18` | [#26](https://github.com/gigi-zacaroni/tp-eng-software/issues/26) | Teste | Validar o padrão Repository: testes de caracterização que passam antes e depois, testes dos repositories e dos services (`npm test`, 39 testes) e roteiro manual contra o MySQL real. | Média | `RF-01`–`RF-03`, `RF-19`, `RNF-06` | 5 | Parcial: testes automatizados prontos; roteiro manual com MySQL pendente |
+
+> **Estado `Especificada`:** a história possui requisitos identificados, critérios de aceitação registrados na Issue e fluxo demonstrado no [protótipo navegável](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/prototipo/README.md). A implementação em código será alocada nas sprints seguintes.
+>
+> **Estado `Implementada (back-end)`** *(introduzido na Sprint 3)*: todos os requisitos da história têm código executável no back-end, com evidência de execução em [`docs/evidencias/`](https://github.com/gigi-zacaroni/tp-eng-software/tree/main/docs/evidencias). A história ainda **não** atende à [Definition of Done](#6-definition-of-done) da seção 6, porque não há interface que a exercite nem teste automatizado — por isso não aparece como `Concluída`.
+>
+> **Estado `Implementada parcialmente`** *(introduzido na Sprint 3)*: parte dos requisitos da história tem código; o que falta está registrado na [seção 7 do arquivo da Sprint 3](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/sprints/sprint-03.md) e na [matriz de rastreabilidade](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/rastreabilidade.md).
+
+
+
 
 ## 5. Definition of Ready
 
 Um item está pronto para entrar em uma sprint quando:
 
-- [ ] possui descrição compreensível;
-- [ ] tem valor ou objetivo identificável;
-- [ ] possui critério de aceitação/conclusão;
-- [ ] dependências principais foram registradas;
-- [ ] foi estimado de acordo com a convenção do grupo.
+* [ ] possui descrição compreensível;
+* [ ] tem valor ou objetivo identificável;
+* [ ] possui critério de aceitação/conclusão;
+* [ ] dependências principais foram registradas;
+* [ ] foi estimado de acordo com a convenção do grupo.
 
 ## 6. Definition of Done
 
 Um item está concluído quando:
 
-- [ ] atende aos critérios de aceitação;
-- [ ] foi revisado por outro integrante;
-- [ ] está integrado à branch `main`;
-- [ ] possui testes/evidências quando aplicável;
-- [ ] atualizou a documentação afetada;
-- [ ] está relacionado ao arquivo da sprint.
+* [ ] atende aos critérios de aceitação;
+* [ ] foi revisado por outro integrante;
+* [ ] está integrado à branch `main`;
+* [ ] possui testes/evidências quando aplicável;
+* [ ] atualizou a documentação afetada;
+* [ ] está relacionado ao arquivo da sprint.
 
 ## 7. Histórico de refinamento
 
-| Sprint | Itens criados/divididos/removidos | Motivo | Evidência |
-|---|---|---|---|
-| Sprint 1 | `[PREENCHER]` | `[PREENCHER]` | `#XX` |
+| Sprint   | Itens criados/divididos/removidos                                                                                                                           | Motivo                                                                                                   | Evidência |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | --------- |
+| Sprint 1 | Criação das tarefas de definição do problema, público, visão do produto, proposta de valor, GitHub Project, backlog, responsabilidades e protótipo inicial. | Estruturar o projeto, delimitar o problema e estabelecer as bases para o desenvolvimento do ConectaAção. | [`docs/visao-geral.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/visao-geral.md) |
+| Sprint 2 | Inclusão do item de documentação dos requisitos (`D-02`) e abertura das onze histórias como Issues ([#2](https://github.com/gigi-zacaroni/tp-eng-software/issues/2), [#3](https://github.com/gigi-zacaroni/tp-eng-software/issues/3), [#5](https://github.com/gigi-zacaroni/tp-eng-software/issues/5) a [#13](https://github.com/gigi-zacaroni/tp-eng-software/issues/13)) no [GitHub Project](https://github.com/users/gigi-zacaroni/projects/1). | Vincular os itens do backlog aos requisitos definidos em `docs/requisitos/requisitos.md` e migrar o acompanhamento para Issues. | [PR #1](https://github.com/gigi-zacaroni/tp-eng-software/pull/1) · [PR #4](https://github.com/gigi-zacaroni/tp-eng-software/pull/4) |
+| Sprint 2 | Entrega do protótipo navegável (`T-07` concluída) e inclusão dos itens `D-03` e `D-04`. Conclusão das tarefas `T-04` a `T-06`, pendentes desde a Sprint 1. | Fechar o incremento da sprint e regularizar o registro das tarefas iniciais. | [`docs/prototipo/README.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/prototipo/README.md) |
+| Sprint 2 | Padronização do estado das **onze** histórias como `Especificada`, com a label de prioridade aplicada em cada Issue e um bloco de demonstração no protótipo acrescentado ao corpo. | O objetivo da sprint foi especificar e validar o escopo completo, não implementá-lo; todas as histórias passaram pelo mesmo ciclo de refinamento e validação no protótipo. | [Issues #2–#13](https://github.com/gigi-zacaroni/tp-eng-software/issues) · [GitHub Project](https://github.com/users/gigi-zacaroni/projects/1) |
+| Sprint 3 | Criação de `D-05`, `D-06`, `D-07` e `T-08` como Issues próprias ([#15](https://github.com/gigi-zacaroni/tp-eng-software/issues/15) a [#18](https://github.com/gigi-zacaroni/tp-eng-software/issues/18)). | A modelagem e a implementação do back-end eram trabalho real da sprint, mas não tinham item no backlog — estavam sendo rastreadas informalmente sob as Issues das histórias de usuário, o que confundia o que era especificação e o que era execução. | [#15](https://github.com/gigi-zacaroni/tp-eng-software/issues/15) · [#16](https://github.com/gigi-zacaroni/tp-eng-software/issues/16) · [#17](https://github.com/gigi-zacaroni/tp-eng-software/issues/17) · [#18](https://github.com/gigi-zacaroni/tp-eng-software/issues/18) |
+| Sprint 3 | Introdução dos estados `Implementada (back-end)` e `Implementada parcialmente`; `US-01`, `US-02`, `US-03` e `US-08` saíram de `Especificada`. | As quatro histórias deixaram de ser apenas especificação, mas nenhuma atende à Definition of Done — falta interface, revisão e teste. Manter `Especificada` esconderia o avanço; marcar `Concluída` seria falso. | [`docs/rastreabilidade.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/rastreabilidade.md) · [`sprint-03.md` §5](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/sprints/sprint-03.md) |
+| Sprint 3 | **Mudança de stack**: de Next.js/React + Java/Spring Boot para **Node.js/Express + MySQL**, com front-end em HTML/CSS. | O stack anterior foi fixado na [decisão 5 da ata de 12/09](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/reunioes/2026-09-12-refinamento-requisitos.md) sem que nenhuma linha tivesse sido escrita nele. No planejamento da sprint o grupo optou pela stack que já dominava, para entregar um fluxo verificável dentro do prazo. Nenhum requisito foi alterado. | [Ata de 22/09, decisão 3](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/reunioes/2026-09-22-planejamento-sprint-03.md) · [`README.md` §2](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/README.md) |
+| Sprint 3 | Refinamentos revelados pela modelagem: separação de `USUARIO` das tabelas de perfil; controle transacional do saldo da necessidade; rotas dedicadas de acesso. | Decisões que só apareceram ao desenhar os modelos e que mudaram o schema e o código — estão descritas na [§6 de `modelagem.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/modelagem/modelagem.md). | [`docs/modelagem/modelagem.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/modelagem/modelagem.md) |
+| Sprint 3 | Criação de `T-09` ([#19](https://github.com/gigi-zacaroni/tp-eng-software/issues/19)) e `T-10` ([#20](https://github.com/gigi-zacaroni/tp-eng-software/issues/20)). | Lacunas encontradas na revisão do incremento: a API legada ficou no repositório com credencial versionada, e o modelo comportamental prevê consultas que nenhum endpoint atende — `T-10` bloqueia `US-04` e `US-05`. | [#19](https://github.com/gigi-zacaroni/tp-eng-software/issues/19) · [#20](https://github.com/gigi-zacaroni/tp-eng-software/issues/20) |
+| Sprint 4 | Criação de `T-11` a `T-14` ([#21](https://github.com/gigi-zacaroni/tp-eng-software/issues/21) a [#24](https://github.com/gigi-zacaroni/tp-eng-software/issues/24)) e de `D-08`. `T-09` concluída. | Registrar no backlog a refatoração em camadas e o documento de decisões de projeto. As Issues técnicas foram abertas depois do código, no mesmo dia. | [`decisoes-de-projeto.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/projeto/decisoes-de-projeto.md) · [`086991a`](https://github.com/gigi-zacaroni/tp-eng-software/commit/086991a9e908c6b4229169ff140e15112611e1a0) |
+| Sprint 4 | Criação de `T-15`, `T-16` e `T-17`. `T-10`, `US-04`, `US-05` e `US-07` passam para a Sprint 5. | Os três itens novos saíram da análise de coesão e acoplamento. Os endpoints de consulta não couberam na sprint, que priorizou a refatoração. | [`decisoes-de-projeto.md` §5](https://github.com/gigi-zacaroni/tp-eng-software/blob/main/docs/projeto/decisoes-de-projeto.md) |
+| Sprint 5 | Resolução de `T-17` (padrão Repository) e criação de `T-18` (validação do padrão). `T-15` e `T-16` não foram tratados na sprint e continuam `A fazer`. | O problema concreto que justificou o padrão foi o SQL dentro dos services, apontado na análise de acoplamento da Sprint 4. A validação virou item próprio porque inclui testes automatizados e um roteiro manual que dependem de MySQL. | [`padroes-de-projeto.md`](https://github.com/gigi-zacaroni/tp-eng-software/blob/sprint-05/docs/padroes/padroes-de-projeto.md) · [`decisoes-de-projeto.md` `DP-04`](https://github.com/gigi-zacaroni/tp-eng-software/blob/sprint-05/docs/projeto/decisoes-de-projeto.md) |
+
