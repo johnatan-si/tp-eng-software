@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConectaAção</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#login" class="logo">💚 ConectaAção</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main>
+    <p id="aviso" class="aviso" hidden></p>
+
+    <!-- LOGIN -->
+    <section data-view="login">
+      <h1>Entrar</h1>
+      <form id="form-login">
+        <label>E-mail <input type="email" name="email" required></label>
+        <label>Senha <input type="password" name="senha" required></label>
+        <button>Entrar</button>
+      </form>
+      <p class="sub">Ainda não tem conta? <a href="#cadastro-doador">Sou doador</a> · <a href="#cadastro-instituicao">Sou instituição</a></p>
+    </section>
+
+    <!-- CADASTRO DOADOR -->
+    <section data-view="cadastro-doador">
+      <h1>Cadastro de doador</h1>
+      <form id="form-doador">
+        <label>Nome <input name="nome" required></label>
+        <label>E-mail <input type="email" name="email" required></label>
+        <label>Senha <input type="password" name="senha" required></label>
+        <label>Confirmar senha <input type="password" name="confirmarSenha" required></label>
+        <button>Criar conta</button>
+      </form>
+      <p class="sub">É uma instituição? <a href="#cadastro-instituicao">Cadastre-se aqui</a></p>
+    </section>
+
+    <!-- CADASTRO INSTITUIÇÃO -->
+    <section data-view="cadastro-instituicao">
+      <h1>Cadastro de instituição</h1>
+      <form id="form-instituicao">
+        <fieldset><legend>Acesso</legend>
+          <label>E-mail <input type="email" name="email" required></label>
+          <label>Senha <input type="password" name="senha" required></label>
+          <label>Confirmar senha <input type="password" name="confirmarSenha" required></label>
+        </fieldset>
+        <fieldset><legend>Sobre a instituição</legend>
+          <label>Nome <input name="nome" required></label>
+          <label>Descrição <textarea name="descricao" rows="3"></textarea></label>
+        </fieldset>
+        <fieldset><legend>Necessidades iniciais (opcional)</legend>
+          <div id="necessidades"></div>
+          <button type="button" id="add-necessidade" class="secundario">+ Adicionar item</button>
+        </fieldset>
+        <button>Cadastrar instituição</button>
+      </form>
+    </section>
+
+    <!-- PAINEL -->
+    <section data-view="painel">
+      <div id="painel-conteudo"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
